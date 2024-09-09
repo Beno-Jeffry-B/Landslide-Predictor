@@ -63,6 +63,10 @@ Software setup:
      ngrok http 5000
      ```
    - Access your app via the public URL provided by ngrok (e.g., `http://abcd1234.ngrok.io`).
+  
+Links:
+Demo vid: https://drive.google.com/file/d/1ldKoK-qtA-m-kWwBuSdkW6Mo59QZfQgN/view?usp=drive_link
+
 
 
 
