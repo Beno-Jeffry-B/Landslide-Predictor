@@ -1,0 +1,9 @@
+pip install Flask
+pip install flask-ngrok
+pip install scikit-learn
+pip install numpy
+pip install tensorflow
+pip install pandas
+pip install openpyxl
+
+TE3KTR74BCPF6FEARKZ2VXCJDEIRIQQQ   authetication

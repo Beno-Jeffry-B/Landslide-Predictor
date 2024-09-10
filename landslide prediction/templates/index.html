@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landslide Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="main-header">
+    <h1>Landslide Predictor</h1>
+  </header>
+
+  <!-- Form Container -->
+  <div class="container">
+   
+    <form id="predictForm">
+      <label for="precipitation">Precipitation:</label>
+      <input type="number" id="precipitation" name="precipitation" step="any" required>
+      
+      <label for="energy">Energy:</label>
+      <input type="number" id="energy" name="energy" step="any" required>
+      
+      <label for="soil_moisture">Soil Moisture:</label>
+      <input type="number" id="soil_moisture" name="soil_moisture" step="any" required>
+      
+      <label for="latitude">Latitude:</label>
+      <input type="number" id="latitude" name="latitude" step="any" min="-90" max="90" required>
+      
+      <label for="longitude">Longitude:</label>
+      <input type="number" id="longitude" name="longitude" step="any" min="-180" max="180" required>
+      
+      <label for="elevation">Elevation:</label>
+      <input type="number" id="elevation" name="elevation" step="any" required>
+      
+      <label for="run">Run:</label>
+      <input type="number" id="run" name="run" step="any" required>
+      
+      <label for="slope">Slope:</label>
+      <input type="number" id="slope" name="slope" step="any" required>
+      
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+
+  <!-- Add this div within the container or wherever suitable -->
+  <div id="result" style="text-align: center; margin-top: 20px;"></div>
+
+
+  <!-- Footer Section with Credits -->
+  <footer class="footer">
+    <p><strong>Credits:Byte By Byte</strong></p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
